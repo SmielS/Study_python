@@ -8,10 +8,10 @@
 # print(n)
 
 
-def reversed3(stroka): 
+def reversed(stroka): 
     if len(stroka) == 1:
         return stroka
-    return stroka[-1] + reversed3(stroka[:-1])
+    return stroka[-1] + reversed(stroka[:-1])
 
-n = reversed3(input())
+n = reversed(input())
 print(n)
