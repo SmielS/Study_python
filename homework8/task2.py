@@ -8,10 +8,19 @@
 # print(n)
 
 
-def reversed(stroka): 
-    if len(stroka) == 1:
-        return stroka
-    return stroka[-1] + reversed(stroka[:-1])
+# def reversed(stroka): 
+#     if len(stroka) == 1:
+#         return stroka
+#     return stroka[-1] + reversed(stroka[:-1])
 
-n = reversed(input())
-print(n)
+# n = reversed(input())
+# print(n)
+
+def f(n):
+    if n == 0:
+        return ''
+    x = input()
+    return f(n - 1) + f' {x}'
+
+n = int(input())
+print(f(n))
